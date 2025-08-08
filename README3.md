@@ -54,7 +54,7 @@ Das Dev Team hat bereits eine Entwicklerversion der APP auf Basis des `Requireme
 ---
 
 ### 6. **Containerisierung & Jenkins**
-- Jenkins muss als Docker-Container auf ARM64 lauffähig sein. Alle Jenkins-Daten sollen persistent gespeichert werden.
+- Jenkins muss als Container auf ARM64 lauffähig sein.
 - Die Jenkins-Konfiguration muss möglichst vollständig als Code vorliegen.
 - Es müssen mindestens zwei Jenkins-Agents auf unterschiedlichen Geräten/VMs eingerichtet werden.
 - Jenkins sollte keine Warnungen mehr anzeigen (Security).
@@ -62,12 +62,11 @@ Das Dev Team hat bereits eine Entwicklerversion der APP auf Basis des `Requireme
 
 ---
 
-### 7. **Monitoring & Observierbarkeit (Tool-unabhängig)**
-
-- Jenkins muss seine eigenen Metriken bereitstellen.
-- Ein Metrik-Erfassungssystem muss diese Metriken regelmäßig abfragen und speichern.
-- Eine Visualisierungsplattform muss Dashboards zur Darstellung der Jenkins-Metriken bereitstellen.
-- Logs aller relevanten Container (einschließlich Jenkins und der Monitoring-Komponenten) müssen über eine Containerverwaltungs- oder Log-Aggregationslösung einsehbar sein.
+### 7. **Monitoring & Observability**
+- Jenkins muss interne Metriken bereitstellen.
+- Diese Metriken erfasst/gesammelt werden.
+- Ein Dashboard zur Visualisierung der CI/CD-Metriken muss bereitgestellt werden.
+- Logs aller relevanten Container (Jenkins, Mtriken, Dashboards) müssen zentral einsehbar sein.
 
 ---
 
@@ -76,7 +75,7 @@ Das Dev Team hat bereits eine Entwicklerversion der APP auf Basis des `Requireme
 - Das Deployment erfolgt mit "Infrastructure as Code" (IaC).
 - Die Anwendung muss Metriken bereitstellen, die über Azure Application Insights analysierbar sind.
 
-### 9. Dokumentation
+### 9. **Dokumentation**
 - Eine Dokumentation der Architektur soll vorliegen.
 - Entscheidungen für oder gegen bestimmte Architektur-Entscheidungen und Tools soll vorliegen.
 - Eine Entwickler Dokumentation soll vorliegen.
